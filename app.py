@@ -4,7 +4,7 @@ from dash import dcc, html, Input, Output
 import plotly.express as px
 
 # Cargar el dataset
-df = pd.read_csv("C:/Users/ASUS/Downloads/student_performance_dataset.csv")
+df = pd.read_csv("student_performance_dataset.csv")
 # Reemplazar valores nulos de forma segura (evita FutureWarning)
 df["Study_Hours_per_Week"] = df["Study_Hours_per_Week"].fillna(df["Study_Hours_per_Week"].median())
 df["Attendance_Rate"] = df["Attendance_Rate"].fillna(df["Attendance_Rate"].median())
